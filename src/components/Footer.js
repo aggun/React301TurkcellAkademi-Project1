@@ -2,6 +2,7 @@ import { useContext } from "react";
 import Langcontext from "../contexts/LangContext";
 import ThemaContext from "../contexts/ThemaContext";
 function Footer() {
+
     const { thema, toggleThema } = useContext(ThemaContext)
     const { lang, setLang } = useContext(Langcontext)
     return (
@@ -28,5 +29,4 @@ function Footer() {
         </div>
     )
 }
-
 export default Footer
